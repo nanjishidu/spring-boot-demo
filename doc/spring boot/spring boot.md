@@ -1,0 +1,13 @@
+
+* [spring4all](http://www.spring4all.com/)
+* [Spring Framework Reference Documentation](https://docs.spring.io/spring/docs/4.3.3.RELEASE/spring-framework-reference/htmlsingle/#overview-getting-started-with-spring)
+* [程序猿DD/SpringBoot-Learning](https://gitee.com/didispace/SpringBoot-Learning)
+* [hyrijk/spring-boot-blog](https://github.com/hyrijk/spring-boot-blog)
+* [spring-boot mybatis 连接Oracle](http://www.jianshu.com/p/b2aaf020c2aa)
+* [使用Swagger时出现MethodArgumentTypeMismatchException](https://github.com/dyc87112/SpringBoot-Learning/issues/4)
+* [mybatis对时间的处理](http://blog.csdn.net/u012302681/article/details/47290745)
+* [Apache Commons 工具类介绍及简单使用](http://blog.csdn.net/lovesomnus/article/details/41626747)
+* [使用idea搭建spring boot项目](http://blog.csdn.net/mengdonghui123456/article/details/71304550)
+* [使用idea新建spring boot项目](http://www.jianshu.com/p/45ba074dbc81)
+* [IDEA配置maven(配置阿里云中央仓库)](http://mangocool.com/1488447221130.html)
+*[Spring/SpringBoot定义统一异常错误码返回](http://blog.csdn.net/KingBoyWorld/article/details/76717204)
