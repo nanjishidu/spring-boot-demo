@@ -11,3 +11,4 @@
 * [使用idea新建spring boot项目](http://www.jianshu.com/p/45ba074dbc81)
 * [IDEA配置maven(配置阿里云中央仓库)](http://mangocool.com/1488447221130.html)
 *[Spring/SpringBoot定义统一异常错误码返回](http://blog.csdn.net/KingBoyWorld/article/details/76717204)
+*[Spring Boot干货系列：（六）静态资源和拦截器处理](http://tengj.top/2017/03/30/springboot6/)
