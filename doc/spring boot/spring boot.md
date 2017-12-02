@@ -14,3 +14,4 @@
 * [Spring Boot干货系列：（六）静态资源和拦截器处理](http://tengj.top/2017/03/30/springboot6/)
 * [spring boot上传文件限制大小](http://cxytiandi.com/blog/detail/7771)
 * [spring boot文件上传REST风格API ajax方式](http://www.leftso.com/blog/232.html)
+* [通过零拷贝实现有效数据传输](https://www.ibm.com/developerworks/cn/java/j-zerocopy/)
