@@ -5,8 +5,8 @@
 <Configuration status="OFF">
     <!-- 日志文件目录和压缩文件目录配置 -->
     <Properties>
-        <Property name="fileName">logs</Property>
-        <Property name="fileGz">logs/7z</Property>
+        <Property name="fileName">/opt/spring-boot/logs</Property>
+        <Property name="fileGz">/opt/spring-boot/logs/7z</Property>
         <property name="PATTERN">%highlight{%d{HH:mm:ss.SSS} [%t] %-5level %logger{1.}:%L - %msg%n}{%throwable{short.fileName}}{FATAL=white,ERROR=red,
             WARN=blue, INFO=black, DEBUG=green, TRACE=blue}</property>
     </Properties>
@@ -14,7 +14,7 @@
         <!-- 输出控制台日志的配置 -->
         <Console name="console" target="SYSTEM_OUT">
             <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
-            <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
             <!-- 输出日志的格式 -->
             <PatternLayout pattern="${PATTERN}"/>
         </Console>
@@ -53,7 +53,7 @@
     <!-- 全局配置，默认所有的Logger都继承此配置 -->
     <Loggers>
         <!-- AsyncRoot - 异步记录日志 - 需要LMAX Disruptor的支持 -->
-        <AsyncRoot level="trace" additivity="false">
+        <AsyncRoot level="debug" additivity="false">
             <AppenderRef ref="console"/>
             <AppenderRef ref="infoFile"/>
             <AppenderRef ref="errorFile"/>

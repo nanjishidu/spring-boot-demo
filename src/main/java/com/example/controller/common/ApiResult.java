@@ -39,7 +39,6 @@ public abstract class ApiResult {
         return new ErrorApiResult(errorCode, errorMessage);
     }
 
-
 }
 
 
