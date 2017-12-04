@@ -97,7 +97,7 @@ public class UserController {
         }
         user.setPassword(DigestUtils.md5Hex(user.getPassword()));
         userService.insert(user);
-        logger.debug("添加用户id：",user.getId());
+        logger.info("添加用户id：",user.getId());
         return ApiResult.jdata(user);
     }
 
