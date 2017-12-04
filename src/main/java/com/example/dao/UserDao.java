@@ -32,7 +32,7 @@ public interface UserDao {
      * 根据用户id，删除用户信息
      *
      */
-    @Delete("DELETE FROM user WHERE id =#{id}")
+    @Delete("DELETE FROM t_user WHERE id =#{id}")
     int delete(Long id);
 
     /**
@@ -46,7 +46,7 @@ public interface UserDao {
      * 根据用户id，查询用户信息
      *
      */
-    @Select("SELECT * FROM user WHERE id = #{id}")
+    @Select("SELECT * FROM t_user WHERE id = #{id}")
     // 返回 Map 结果集
     @Results({
             @Result(id = true, property = "id", column = "id"),
@@ -67,7 +67,7 @@ public interface UserDao {
      * 根据用户名(唯一)，查询用户信息
      *
      */
-    @Select("SELECT * FROM user WHERE username = #{username}")
+    @Select("SELECT * FROM t_user WHERE username = #{username}")
     // 返回 Map 结果集
     @Results({
             @Result(property = "createTime", column = "create_time", jdbcType = TIMESTAMP),
@@ -77,7 +77,7 @@ public interface UserDao {
      * 查询所有用户信息
      *
      */
-    @Select("SELECT * FROM user")
+    @Select("SELECT * FROM t_user")
     @Results({
             @Result(property = "createTime", column = "create_time", jdbcType = TIMESTAMP),
     })

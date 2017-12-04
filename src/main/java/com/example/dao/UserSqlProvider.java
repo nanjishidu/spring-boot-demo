@@ -17,7 +17,7 @@ import java.util.Map;
  */
 public class UserSqlProvider {
 
-    private final static String TABLE_NAME = "user";
+    private final static String TABLE_NAME = "t_user";
     private static final Logger logger = LogManager.getLogger(UserSqlProvider.class);
     /**
      * 添加用户
@@ -171,7 +171,8 @@ public class UserSqlProvider {
         if (params.get("pageSize")!=null&&params.get("page")!=null){
             int pageSize = (int) params.get("pageSize");
             int page = (int) params.get("page");
-            sql = sql.trim() + " LIMIT " + (page - 1) * pageSize + "," + pageSize;
+            sql = "SELECT * FROM (SELECT tt.*, ROWNUM AS rowno FROM (  "+sql +") tt WHERE ROWNUM < "+page * pageSize+
+                    ") table_alias WHERE table_alias.rowno >= "+(page - 1) * pageSize;
         }
         System.out.println(sql);
         return sql;
