@@ -80,7 +80,6 @@ public class UserController {
     @ApiOperation(value="添加用户信息", notes="添加用户信息")
     @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
     @RequestMapping(value = "", method = RequestMethod.POST)
-    @LoginRequired
     public ApiResult insert(@RequestBody User user){
         logger.trace("trace");
         logger.debug("debug");

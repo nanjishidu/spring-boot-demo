@@ -26,6 +26,7 @@ public class UserSqlProvider {
         String sql = new SQL() {
             {
                 INSERT_INTO(TABLE_NAME);
+//                VALUES("id", "#{id}");
                 if (user.getName() != null) {
                     VALUES("name", "#{name}");
                 }
@@ -69,6 +70,7 @@ public class UserSqlProvider {
                 }
             }
         }.toString();
+        System.out.println(sql);
         return sql;
     }
     /**

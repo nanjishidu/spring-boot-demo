@@ -24,6 +24,7 @@ public interface UserDao {
      *
      */
     @InsertProvider(type = UserSqlProvider.class, method = "insert")
+//    @SelectKey(statement="select t_user_sequence.nextval from dual",keyProperty="id", keyColumn = "id", before = true, resultType=long.class)
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     //@Options注解 在插入记录时，一般是定义主键自增(auto_increment)，但是在某些情况下，我们插入一条记录后，还想得到这条记录的自增主键ID，useGeneratedKeys=true就是定义数据库返回主键ID的，
     int insert(User user);

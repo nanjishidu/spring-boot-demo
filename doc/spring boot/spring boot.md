@@ -15,3 +15,7 @@
 * [spring boot上传文件限制大小](http://cxytiandi.com/blog/detail/7771)
 * [spring boot文件上传REST风格API ajax方式](http://www.leftso.com/blog/232.html)
 * [通过零拷贝实现有效数据传输](https://www.ibm.com/developerworks/cn/java/j-zerocopy/)
+* [Maven 手动导入ojdbc6.jar](http://www.jianshu.com/p/492c8a9a0118)
+* [Oracle 字段类型](http://www.cnblogs.com/lihan/archive/2010/01/06/1640547.html)
+* [MyBatis+Oracle实现主键自增长的几种常用方式](http://blog.csdn.net/wal1314520/article/details/77132305)
+* [mybatis 实现oracle主键自增的机制](http://www.cnblogs.com/panie2015/p/5807683.html)
