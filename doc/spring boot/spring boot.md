@@ -21,7 +21,8 @@
 * [mybatis 实现oracle主键自增的机制](http://www.cnblogs.com/panie2015/p/5807683.html)
 * [maven跳过单元测试-maven.test.skip和skipTests的区别](http://blog.csdn.net/arkblue/article/details/50974957)
 * [解决使用Spring Boot、Multipartfile上传文件路径错误问题](http://coderec.cn/2016/01/31/%E8%A7%A3%E5%86%B3%E4%BD%BF%E7%94%A8Spring-Boot%E3%80%81Multipartfile%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/)
+* [Spring Boot的Web配置(九)：Tomcat配置和Tomcat替换](http://blog.longjiazuo.com/archives/1725)
 
 ```
-mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=12.1.0.2 -Dpackaging=jar -Dfile=ojdbc7.jar
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4 -Dpackaging=jar -Dfile=ojdbc6.jar
 ```
