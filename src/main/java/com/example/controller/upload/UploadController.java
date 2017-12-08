@@ -82,7 +82,7 @@ public class UploadController {
         logger.info("上传后文件名"+fileName);
 
         String subName = this.getSubDir()+fileName;
-        File dest = new File(UPLOADED_DIR + subName);
+        File dest = new File(UPLOADED_DIR , subName);
         if (!dest.getParentFile().exists()) {
             dest.getParentFile().mkdirs();
         }
